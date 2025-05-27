@@ -1,0 +1,142 @@
+$ cd C:\\Users\\OneDrive\\Desktop\\devops1
+
+$ git init
+
+$ ls
+
+$ git status
+
+$ git init
+
+$ git status
+
+$ touch master1.txt
+
+$ ls
+
+$ vim master1.txt
+
+$ cat master1.txt
+this is merge and rebase prac
+
+$ git status
+
+$ git add .
+warning: in the working copy of 'master1.txt', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -m "code added"
+[master (root-commit) a6e9521] code added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 master1.txt
+
+$ git branch Demo
+
+$ git checkout Demo
+Switched to branch 'Demo'
+
+$ vim Demo1.txt
+
+$ cat Demo1.txt
+this is the second file created at every branch 
+
+$ git add .
+warning: in the working copy of 'Demo1.txt', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -m "code added"
+[Demo aebac85] code added
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Demo1.txt
+
+$ git log
+
+$ git checkout master
+Switched to branch 'master'
+
+$ vim Demo2.txt
+
+$ cat Demo2.txt
+this is the third text file
+
+$ git add .
+warning: in the working copy of 'Demo2.txt', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -m "code added"
+[master 48cd3d1] code added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Demo2.txt
+
+$ git checkout Demo
+Switched to branch 'Demo'
+
+$ git merge master
+Merge made by the 'ort' strategy.
+ Demo2.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Demo2.txt
+
+$ git log
+check the file created at desktop all the files will be visible created in every branch
+
+================================================================================REBASE======================================================================
+
+$ cd C:\\Users\\OneDrive\\Desktop\\gitrebase
+
+$ git init
+
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+$ touch demo1.txt
+
+$ git add .
+
+$ git commit -m "code added"
+[master (root-commit) 77a5334] code added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo1.txt
+
+$ git log
+
+$ git branch demo
+
+$ git checkout demo
+Switched to branch 'demo'
+
+$ git log
+
+$ touch demo2.txt
+
+$ git add .
+
+$ git commit -m "code added again"
+[demo 20843d9] code added again
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo2.txt
+
+$ git log
+
+$ git checkout master
+Switched to branch 'master'
+
+$ touch demo3.txt
+
+$ git add .
+
+$ git commit -m "code added to demo3"
+[master 9e4781b] code added to demo3
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo3.txt
+
+$ git log
+
+$ git checkout Demo
+Switched to branch 'Demo'
+
+$ git rebase master
+Successfully rebased and updated refs/heads/Demo.
+
+$ git log

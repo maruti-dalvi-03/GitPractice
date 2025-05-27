@@ -1,0 +1,44 @@
+Pipeline Gitlab:
+
+Project1:
+First File: .gitlab-ci.yml
+
+Code:
+build-steps:
+    script:
+        = echo "this is first step in build"
+        = echo "Second step in build"
+Commit Changes
+
+Project 2:
+First File: .gitlab-ci.yml
+
+Code:
+build-steps:
+    script:
+        - echo "first step in build"
+testing-job:
+    script:
+        - echo "first step in testing"
+deploy-job:
+    script:
+        - echo "first step in deploy"
+Commit Changes
+
+Project 3:
+First File: try.sh(Config File)
+
+echo "this is try bash script"
+touch myfile.txt
+echo "script text added"> myfile.txt
+echo "end of the bash script"
+
+Commit Changes
+
+Second File: .gitlab-ci.yml
+
+bash_execution:
+    script:
+        - bash ./try.sh
+
+Commit Changes

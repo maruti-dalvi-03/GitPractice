@@ -1,0 +1,44 @@
+Implementation of Branch merging using GitHub
+$ pwd
+
+$ cd C:\\Users\\OneDrive\\Desktop\\Devops
+
+$git status 
+
+$git init
+
+$git status 
+
+$git add.
+
+$ git commit -m "code added"
+
+$ git branch -m main
+
+$ git remote add origin https://github.com/ABC/Devops.git
+
+$ git log --oneline --decorate
+
+$git branch Demo
+
+$git branch
+
+$git checkout Demo
+
+$vim one_demo.txt- to create a new file and write some content in it 
+
+to exit this click on escape then shift + : and "wq"
+
+$cat one_demo.txt
+
+$git add one_demo.txt
+
+$git commit -m "Code added"
+
+$git log --oneline --decorate 
+
+$git push origin Demo
+
+$git checkout main
+
+$git push origin main

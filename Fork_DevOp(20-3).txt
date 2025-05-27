@@ -1,0 +1,43 @@
+std A
+Create Repo. - hiray
+upload any txt file
+Merg Request
+Confirm Merg
+
+
+std B
+in search bar paste = Repo.link_of_hiray(from stdA)
+click on fork
+Create Frok
+Create folder on Desktop (name- Omkar)
+go to git bash - cd file_directory
+		git init
+		git clone paste-Repolink_of_hiray(from stdB)
+		ls
+		cd hiray
+		ls
+		cat first.txt
+		git status
+		vim first.txt -"make changes in file" esc:wq
+		cat first.txt
+		git status
+		git add.
+		git status
+		git remote 
+		git remote rm origin
+		git remote
+		git add.
+		git status
+		git commit -m "added first.txt"
+		git remote add origin paste-Repolink_of_hiray(from stdB)
+setting- tokens - generate new token
+title- Omkartoken
+give expiration	date
+select all the scopes...
+generate token
+		git remote set-url origin https://Paste_token_URL@paste-Repolink_of_hiray(from stdB)
+		git push origin main
+pull request 
+create pull request
+add title - Updated first.txt
+create pull request
